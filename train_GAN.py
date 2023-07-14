@@ -15,3 +15,11 @@ batch_size = 128
 
 generator = Generator(latent_dim, img_shape)
 discriminator = Discriminator(img_shape)
+
+adversarial_loss = nn.BCELoss()
+
+optimizer_G = optim.Adam(generator.parameters(), lr=0.0002, betas=(0.5, 0.999))
+optimizer_D = optim.Adam(discriminator.parameters(), lr=0.0002, betas=(0.5, 0.999))
+
+dataset = MNIST(root='./data', train=True, transform=transforms.ToTensor(), download=True)
+dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
