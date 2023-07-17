@@ -37,3 +37,5 @@ for epoch in range(epochs):
         
         generated_images = generator(z)
         
+        g_loss = adversarial_loss(discriminator(generated_images), valid)
+        
