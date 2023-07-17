@@ -23,3 +23,11 @@ optimizer_D = optim.Adam(discriminator.parameters(), lr=0.0002, betas=(0.5, 0.99
 
 dataset = MNIST(root='./data', train=True, transform=transforms.ToTensor(), download=True)
 dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
+
+for epoch in range(epochs):
+    for i, (real_images, _) in enumerate(dataloader):
+        batch_size = real_images.size(0)
+
+        valid = torch.ones(batch_size, 1)
+        fake = torch.zeros(batch_size, 1)
+        
