@@ -35,3 +35,5 @@ for epoch in range(epochs):
         
         z = torch.randn(batch_size, latent_dim)
         
+        generated_images = generator(z)
+        
