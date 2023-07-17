@@ -42,3 +42,5 @@ for epoch in range(epochs):
         g_loss.backward()
         optimizer_G.step()
         
+        optimizer_D.zero_grad()
+        
