@@ -33,3 +33,5 @@ for epoch in range(epochs):
         
         optimizer_G.zero_grad()
         
+        z = torch.randn(batch_size, latent_dim)
+        
