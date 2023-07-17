@@ -39,3 +39,6 @@ for epoch in range(epochs):
         
         g_loss = adversarial_loss(discriminator(generated_images), valid)
         
+        g_loss.backward()
+        optimizer_G.step()
+        
