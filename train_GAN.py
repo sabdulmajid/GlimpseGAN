@@ -31,3 +31,5 @@ for epoch in range(epochs):
         valid = torch.ones(batch_size, 1)
         fake = torch.zeros(batch_size, 1)
         
+        optimizer_G.zero_grad()
+        
