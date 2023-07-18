@@ -44,3 +44,7 @@ for epoch in range(epochs):
         
         optimizer_D.zero_grad()
         
+        real_loss = adversarial_loss(discriminator(real_images.view(-1, img_shape)), valid)
+        
+        fake_loss = adversarial_loss(discriminator(generated_images.detach()), fake)
+        
