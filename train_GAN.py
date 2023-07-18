@@ -52,3 +52,7 @@ for epoch in range(epochs):
         
         d_loss.backward()
         optimizer_D.step()
+
+        if (i+1) % 200 == 0:
+            print(f"Epoch [{epoch+1}/{epochs}], Batch [{i+1}/{len(dataloader)}], Generator Loss: {g_loss.item():.4f}, Discriminator Loss: {d_loss.item():.4f}")
+
