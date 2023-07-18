@@ -56,3 +56,5 @@ for epoch in range(epochs):
         if (i+1) % 200 == 0:
             print(f"Epoch [{epoch+1}/{epochs}], Batch [{i+1}/{len(dataloader)}], Generator Loss: {g_loss.item():.4f}, Discriminator Loss: {d_loss.item():.4f}")
 
+torch.save(generator.state_dict(), 'generator.pth')
+torch.save(discriminator.state_dict(), 'discriminator.pth')
