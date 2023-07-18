@@ -50,3 +50,5 @@ for epoch in range(epochs):
         
         d_loss = (real_loss + fake_loss) / 2
         
+        d_loss.backward()
+        optimizer_D.step()
