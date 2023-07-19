@@ -14,3 +14,14 @@ The project directory is structured as follows:
 - **`discriminator/`:** Contains the implementation of the discriminator model, responsible for distinguishing real images from generated ones.
 - **`train_gan.py`:** Implements the GAN training loop and model evaluation, including hyperparameter settings and training configurations.
 
+## Installation
+
+To set up and run the GlimpseGAN project locally, follow these steps:
+
+1. **Clone** the GitHub repository:
+
+```bash
+git clone https://github.com/your-username/GlimpseGAN.git
+cd GlimpseGAN
+```
+
