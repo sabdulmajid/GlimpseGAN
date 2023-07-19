@@ -7,3 +7,5 @@ WORKDIR /app
 COPY generator generator
 COPY discriminator discriminator
 COPY train_gan.py .
+
+RUN pip install torch torchvision
