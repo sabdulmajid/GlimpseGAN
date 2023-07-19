@@ -2,3 +2,5 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: glimpse-gan-deployment
+spec:
+  replicas: 1
