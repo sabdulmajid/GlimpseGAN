@@ -61,3 +61,28 @@ This command generates 10 lifelike images and saves them in the `generated_image
 To deploy GlimpseGAN on a Kubernetes cluster, you need to have a working Kubernetes environment set up, including ```kubectl``` configured to connect to your cluster.
 
 1. Ensure your Docker image is available on a container registry accessible to your Kubernetes cluster. You can push your locally built Docker image to a container registry or use a public registry like Docker Hub.
+
+2. Create a Kubernetes deployment YAML file, let's call it `glimpse-gan-deployment.yaml` and define the deployment configuration:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: glimpse-gan-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: glimpse-gan
+  template:
+    metadata:
+      labels:
+        app: glimpse-gan
+    spec:
+      containers:
+      - name: glimpse-gan-container
+        image: your-username/glimpse-gan:latest
+        ports:
+        - containerPort: 80
+
+```
