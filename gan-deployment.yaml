@@ -7,3 +7,7 @@ spec:
   selector:
     matchLabels:
       app: glimpse-gan
+  template:
+    metadata:
+      labels:
+        app: glimpse-gan
