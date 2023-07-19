@@ -11,3 +11,9 @@ spec:
     metadata:
       labels:
         app: glimpse-gan
+    spec:
+      containers:
+      - name: gan-project-container
+        image: gan-project:latest
+        ports:
+        - containerPort: 80
