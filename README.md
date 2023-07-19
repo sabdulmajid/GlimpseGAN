@@ -49,3 +49,10 @@ To generate images using the Dockerized GlimpseGAN, follow these steps:
 ```bash
 docker pull sabdulmajid/glimpse-gan:latest
 ```
+
+3. Run the Docker container and mount the output directory for generated images:
+```bash
+docker run --rm -v $(pwd)/generated_images:/app/generated_images sabdulmajid/glimpse-gan:latest python generate_images.py --num_images 10 --output_dir /app/generated_images/
+```
+This command generates 10 lifelike images and saves them in the `generated_images/` directory within your current working directory.
+
