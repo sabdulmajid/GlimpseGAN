@@ -56,3 +56,8 @@ docker run --rm -v $(pwd)/generated_images:/app/generated_images sabdulmajid/gli
 ```
 This command generates 10 lifelike images and saves them in the `generated_images/` directory within your current working directory.
 
+## Kubernetes Deployment
+
+To deploy GlimpseGAN on a Kubernetes cluster, you need to have a working Kubernetes environment set up, including ```kubectl``` configured to connect to your cluster.
+
+1. Ensure your Docker image is available on a container registry accessible to your Kubernetes cluster. You can push your locally built Docker image to a container registry or use a public registry like Docker Hub.
