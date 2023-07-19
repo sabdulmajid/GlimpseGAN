@@ -30,3 +30,8 @@ cd GlimpseGAN
 pip install -r requirements.txt
 ```
 
+3. **Run** the GAN training script:
+```bash
+python train_gan.py
+```
+
