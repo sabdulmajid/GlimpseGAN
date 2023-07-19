@@ -25,3 +25,8 @@ git clone https://github.com/your-username/GlimpseGAN.git
 cd GlimpseGAN
 ```
 
+2. **Install** the required Python packages:
+```bash
+pip install -r requirements.txt
+```
+
