@@ -39,3 +39,9 @@ python train_gan.py
 
 Once the GAN model is trained, you can use it to generate lifelike images. GlimpseGAN has been Dockerized for easy deployment and reproducibility. Additionally, you can deploy the Docker image on a Kubernetes cluster for scalable image generation.
 
+## Dockerized Usage
+
+To generate images using the Dockerized GlimpseGAN, follow these steps:
+
+1. Ensure you have Docker installed on your local machine. You can install it from here: [Docker Install](https://www.docker.com/products/docker-desktop/)
+
