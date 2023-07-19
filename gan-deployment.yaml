@@ -4,3 +4,6 @@ metadata:
   name: glimpse-gan-deployment
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: glimpse-gan
