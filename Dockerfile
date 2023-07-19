@@ -9,3 +9,5 @@ COPY discriminator discriminator
 COPY train_gan.py .
 
 RUN pip install torch torchvision
+
+CMD ["python", "train_gan.py"]
