@@ -45,3 +45,7 @@ To generate images using the Dockerized GlimpseGAN, follow these steps:
 
 1. Ensure you have Docker installed on your local machine. You can install it from here: [Docker Install](https://www.docker.com/products/docker-desktop/)
 
+2. Pull the pre-built Docker image from Docker Hub:
+```bash
+docker pull sabdulmajid/glimpse-gan:latest
+```
