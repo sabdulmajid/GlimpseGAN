@@ -93,3 +93,7 @@ Special thanks to the PyTorch community for their powerful deep learning framewo
 ## Contributing
 Contributions to GlimpseGAN are welcome! Please fork the repository and submit a pull request with your enhancements.
 
+## Contact
+For any questions or collaborations, feel free to contact me at [my email](mailto:aymanwebsite@outlook.com).
+
+Enjoy exploring the world of GANs and image generation with GlimpseGAN!
