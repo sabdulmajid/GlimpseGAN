@@ -89,3 +89,7 @@ spec:
 
 ## Acknowledgments
 Special thanks to the PyTorch community for their powerful deep learning framework resources and, of course, the developers of Docker and Kubernetes for simplifying the deployment process.
+
+## Contributing
+Contributions to GlimpseGAN are welcome! Please fork the repository and submit a pull request with your enhancements.
+
