@@ -32,24 +32,16 @@ for epoch in range(epochs):
         fake = torch.zeros(batch_size, 1)
         
         optimizer_G.zero_grad()
-        
         z = torch.randn(batch_size, latent_dim)
-        
         generated_images = generator(z)
-        
         g_loss = adversarial_loss(discriminator(generated_images), valid)
-        
         g_loss.backward()
         optimizer_G.step()
         
         optimizer_D.zero_grad()
-        
         real_loss = adversarial_loss(discriminator(real_images.view(-1, img_shape)), valid)
-        
         fake_loss = adversarial_loss(discriminator(generated_images.detach()), fake)
-        
         d_loss = (real_loss + fake_loss) / 2
-        
         d_loss.backward()
         optimizer_D.step()
 
