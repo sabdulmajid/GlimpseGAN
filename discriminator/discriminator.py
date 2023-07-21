@@ -17,5 +17,5 @@ class Discriminator(nn.Module):
         )
     
     def forward(self, img):
-        validity = self.model(img)
+        validity = self.model(img.view(img.size(0), -1))  # Flatten the image tensor before feeding to the model
         return validity
