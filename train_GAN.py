@@ -5,7 +5,6 @@ from torchvision.datasets import MNIST
 from torchvision import transforms
 from torch.utils.data import DataLoader
 
-
 torch.manual_seed(42)
 
 latent_dim = 100
