@@ -70,7 +70,7 @@ kind: Deployment
 metadata:
   name: glimpse-gan-deployment
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: glimpse-gan
